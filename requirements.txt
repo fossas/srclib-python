@@ -1,5 +1,5 @@
 # git+https://github.com/davidhalter/jedi.git@dev#egg=jedi
-git+https://github.com/sourcegraph/pydep.git@6bd98a678e5262bd50e7e413627eed2c411b86e4
+git+https://github.com/fossas/pydep.git@fossa#egg=pydep
 virtualenv==13.1.0
 # pip==7.1.0
 git+https://github.com/fossas/pip.git@fossa#egg=pip==7.1.0-fossa-0.0.1
