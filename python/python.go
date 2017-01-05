@@ -23,6 +23,8 @@ type pkgInfo struct {
 	Scripts     []string `json:"scripts,omitempty"`
 	Author      string   `json:"author,omitempty"`
 	Description string   `json:"description,omitempty"`
+	License 		string   `json:"license,omitempty"`
+	ClassifierLicenses []string   `json:"classifier_licenses,omitempty"`
 }
 
 func (p *pkgInfo) SourceUnit() *unit.SourceUnit {
@@ -38,6 +40,7 @@ func (p *pkgInfo) SourceUnit() *unit.SourceUnit {
 		Dir:          p.RootDir,
 		Dependencies: nil, // nil, because scanner does not resolve dependencies
 		Ops:          map[string]*srclib.ToolRef{"depresolve": nil, "graph": nil},
+		Data: 				p,
 	}
 }
 
