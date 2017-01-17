@@ -2,7 +2,7 @@ package python
 
 import (
 	"encoding/json"
-	"log"
+	_ "log"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -107,14 +107,14 @@ func requirements(unitDir string) ([]*requirement, error) {
 	if err != nil {
 		return nil, err
 	}
-	reqs, ignoredReqs := pruneReqs(reqs)
-	if len(ignoredReqs) > 0 {
-		ignoredKeys := make([]string, len(ignoredReqs))
-		for r, req := range ignoredReqs {
-			ignoredKeys[r] = req.Key
-		}
-		log.Printf("(warn) ignoring dependencies %v because repo URL absent", ignoredKeys)
-	}
+	// reqs, ignoredReqs := pruneReqs(reqs)
+	// if len(ignoredReqs) > 0 {
+	// 	ignoredKeys := make([]string, len(ignoredReqs))
+	// 	for r, req := range ignoredReqs {
+	// 		ignoredKeys[r] = req.Key
+	// 	}
+	// 	log.Printf("(warn) ignoring dependencies %v because repo URL absent", ignoredKeys)
+	// }
 
 	return reqs, nil
 }
