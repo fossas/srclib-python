@@ -55,6 +55,7 @@ type requirement struct {
 	Modules     []string    `json:"modules"`
 	Resolved    bool        `json:"resolved"`
 	Type        string      `json:"type"`
+	Path        string      `json:"path"`
 }
 
 func (r *requirement) SourceUnit() *unit.SourceUnit {
