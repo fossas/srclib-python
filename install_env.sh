@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-ENV_URL_BASE="https://pypi.python.org/packages/source/v/virtualenv"
+ENV_URL_BASE="https://pypi.org/packages/source/v/virtualenv"
 ENV_VERSION="13.1.0"
 
 # By usign the pprint module, which is supported with the same syntax in python 2 and 3
