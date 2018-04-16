@@ -27,7 +27,7 @@ else
 fi
 
 # Setup virtual env.
-curl -O $ENV_URL_BASE/virtualenv-$ENV_VERSION.tar.gz
+curl -LO $ENV_URL_BASE/virtualenv-$ENV_VERSION.tar.gz
 tar xzf virtualenv-$ENV_VERSION.tar.gz
 
 if [ "$OS" = 'Windows_NT' ] ; then
