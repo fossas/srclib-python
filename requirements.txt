@@ -1,5 +1,6 @@
 # git+https://github.com/davidhalter/jedi.git@dev#egg=jedi
-git+https://github.com/fossas/pydep.git@fossa#egg=pydep
+# We use the "fossa" branch of pydep. This should point at the current commit:
+git+https://github.com/fossas/pydep.git@e5df1692b977826c087e0ef42bad218ca5c28963#egg=pydep
 virtualenv==13.1.0
 # pip==7.1.0
 git+https://github.com/fossas/pip.git@fossa#egg=pip==7.1.0-fossa-0.0.1
