@@ -1,4 +1,5 @@
 # srclib-python [![Build Status](https://travis-ci.org/sourcegraph/srclib-python.png?branch=master)](https://travis-ci.org/sourcegraph/srclib-python)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ffossas%2Fsrclib-python.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Ffossas%2Fsrclib-python?ref=badge_shield)
 
 ## Jedi
 
@@ -48,3 +49,7 @@ srclib-python runs on Python 2.7 (and some glue code in Go), but it can still pr
 
 srclib-python's type analysis is based on
 [Jedi](https://github.com/davidhalter/jedi).
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ffossas%2Fsrclib-python.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Ffossas%2Fsrclib-python?ref=badge_large)
